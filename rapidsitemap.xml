@@ -15,6 +15,7 @@
         <folder>ComRapidsitemap</folder>
         <folder>views</folder>
         <filename>.htaccess</filename>
+        <filename>routing.yml</filename>
     </files>
 
     <administration />
