@@ -1,0 +1,20 @@
+{
+    "name": "mikoweb/joomla-sitemap-component",
+    "type": "joomlatools-installer",
+    "description": "Joomla Sitemap Component",
+    "homepage": "http://vision-web.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafał Mikołajun",
+            "email": "rafal@vision-web.pl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "mikoweb/joomla-rapid-composer": "~0.0.10",
+        "mikoweb/joomla-rapid-framework-plugin": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
