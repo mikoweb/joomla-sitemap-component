@@ -15,6 +15,7 @@
         <folder>ComRapidsitemap</folder>
         <folder>views</folder>
         <filename>.htaccess</filename>
-        <filename>rapidsitemap.php</filename>
     </files>
+
+    <administration />
 </extension>
