@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2" method="upgrade">
+    <name>com_rapidsitemap</name>
+    <author>Rafał Mikołajun</author>
+    <creationDate>December 2014</creationDate>
+    <copyright>Copyright (C) 2014 Rafał Mikołajun</copyright>
+    <license>MIT</license>
+    <authorEmail>rafal@vision-web.pl</authorEmail>
+    <authorUrl>www.vision-web.pl</authorUrl>
+    <version>0.0.1</version>
+
+    <scriptfile>install.php</scriptfile>
+
+    <files folder="frontend/com_rapidsitemap">
+        <folder>ComRapidsitemap</folder>
+        <folder>views</folder>
+        <filename>.htaccess</filename>
+        <filename>rapidsitemap.php</filename>
+    </files>
+</extension>
