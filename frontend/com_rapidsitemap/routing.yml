@@ -1,5 +1,5 @@
 sitemap_all:
     path:     /sitemap.xml
     defaults:
-        _controller: 'ComRapidsitemap\Frontend\Controller\SitemapController::sitemapFromMenuAction'
+        _controller: 'ComRapidsitemap\Frontend\Controller\SitemapController::sitemapAllAction'
         format: 'xml'

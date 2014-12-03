@@ -22,7 +22,7 @@ use \JRegistry;
  */
 final class SitemapController extends ControllerAbstract
 {
-    public function sitemapFromMenuAction()
+    public function sitemapAllAction()
     {
         $doc = $this->container->get("document");
         $doc->renameRoot("urlset");
