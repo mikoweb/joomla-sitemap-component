@@ -13,6 +13,7 @@
 namespace ComRapidsitemap\Frontend\Controller;
 
 use Joomla\Rapid\Component\ControllerAbstract;
+use \JRegistry;
 
 /**
  * @author Rafał Mikołajun <rafal@vision-web.pl>
@@ -23,6 +24,15 @@ final class SitemapController extends ControllerAbstract
 {
     public function sitemapFromMenuAction()
     {
-        return $this->render("@component/com_rapidsitemap/views/sitemap.xml.twig");
+        $doc = $this->container->get("document");
+        $doc->renameRoot("urlset");
+        $root = $doc->element('root');
+        $root->attr("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+
+        return $this->render("@component/com_rapidsitemap/views/sitemap.xml.twig", array(
+                "links" => $this->getDoctrine()
+                    ->getRepository('ComRapidsitemap\Entities\Sitemap')
+                    ->findAll()
+            ));
     }
 }

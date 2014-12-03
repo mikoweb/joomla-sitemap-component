@@ -1,0 +1,13 @@
+{% for link in links %}
+    <url>
+        {% if link.getType == 'route' %}
+            {% set route = link.getLoc %}
+            <loc>{{ domain_path() ~ path(route.name, route.values) }}</loc>
+        {% else %}
+            <loc>{{ link.getLoc }}</loc>
+        {% endif %}
+        <lastmod>{{ link.getLastmod|date('Y-m-d\TH:i:sP') }}</lastmod>
+        {% if link.getChangefreq is not empty %}<changefreq>{{ link.getChangefreq }}</changefreq>{% endif %}
+        {% if link.getPriority is not empty %}<priority>{{ link.getPriority }}</priority>{% endif %}
+    </url>
+{% endfor %}
