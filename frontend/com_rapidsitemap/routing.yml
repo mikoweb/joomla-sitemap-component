@@ -1,4 +1,4 @@
-sitemap_from_menu:
+sitemap_all:
     path:     /sitemap.xml
     defaults:
         _controller: 'ComRapidsitemap\Frontend\Controller\SitemapController::sitemapFromMenuAction'
