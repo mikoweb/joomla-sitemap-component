@@ -13,7 +13,6 @@
 namespace ComRapidsitemap\Frontend\Controller;
 
 use Joomla\Rapid\Component\ControllerAbstract;
-use \JRegistry;
 
 /**
  * @author Rafał Mikołajun <rafal@vision-web.pl>
