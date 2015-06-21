@@ -29,9 +29,7 @@ final class SitemapController extends ControllerAbstract
         $root->attr("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
 
         return $this->render("@component/com_rapidsitemap/views/sitemap.xml.twig", array(
-                "links" => $this->getDoctrine()
-                    ->getRepository('ComRapidsitemap\Entities\Sitemap')
-                    ->findAll()
+                "links" => $this->getRepository('ComRapidsitemap\Entities\Sitemap')->findAll()
             ));
     }
 }

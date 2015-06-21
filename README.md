@@ -32,7 +32,7 @@ com_rapidsitemap:
 
 Tworzenie tabel w bazie danych:
 
-`bin/doctrine orm:schema-tool:update --force --dump-sql`
+`php app/console doctrine:schema:update --force`
 
 ## Tworzenie nowej pozycji menu
 
